@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav class="navbar" id="navbar">
+		<a class="nav-brand" id="nav-brand" href="#page-top">Matt Taylor</a>
+		<a class="nav-toggle" id="nav-toggle" href="javascript:void(0)" onclick="toggleNav()"><i class="fa fa-bars"></i></a>
+		<a class="nav-item active-link" id="home-link" href="#page-top">Home</a>
+		<a class="nav-item" id="portfolio-link" href="#portfolio">My Work</a>
+		<a class="nav-item" id="about-link" href="#about">About Me</a>
+		<a class="nav-item" id="contact-link" href="#contact">Contact Me</a>
+	</nav>
+	<div class="showcase-container" id="page-top">
+		<h1 class="showcase-title">Matt Taylor</h1>
+		<p class="showcase-text">An aspiring software developer with a focus on web application design, revolving around HTML5, CSS3 and JavaScript.</p>
+	</div>
+	<div class="dark-background">
+	<div class="container">
+		<div class="primary-showcase-item">
+			<h2 class="primary-title">Responsive Web Design</h2>
+			<div class="primary-icon" id="icon-1"><i class="fas fa-mobile-alt fa-7x"></i></div>
+			<div class="primary-text">Design & develop responsive websites by implementing features of HTML5 and CSS3, creating a website that is viewable on any device.</div>
+		</div>
+		<div class="primary-showcase-item">
+			<h2 class="primary-title">Dynamic Web Applications</h2>
+			<div class="primary-icon" id="icon-2"><i class="fas fa-code fa-7x"></i></div>
+			<div class="primary-text">Develop dynamic and interactive web applications by introducing JavaScript to static websites, allowing for a unique experience for visitors.</div>
+		</div>
+		<div class="primary-showcase-item">
+			<h2 class="primary-title">Cyber Security</h2>
+			<div class="primary-icon" id="icon-3"><i class="fas fa-lock fa-7x"></i></div>
+			<div class="primary-text">Ensuring people are aware of the potential risks of implementing technology into their business, and outlining potential vulnerabilities to a range of cyber crimes.</div>
+		</div>
+	</div>
+	</div>
+	<h3 class="section-title" id="portfolio">My Work</h3>
+	<div class="container">
+		<div class="secondary-showcase-item showcase-dark">
+			<h3 class="portfolio-title">Invoice Validation</h3>
+			<div class="portfolio-img-container"><img class="portfolio-img" src="img/invoice_val.png"></div>
+			<p class="portfolio-desc">An application built using native JavaScript in addition to the PapaParse plugin (for converting csv files to JSON). The applicaiton takes an input file and validates it against pre-set conditions. Any errors will be listed and available for export to a txt file.</p>
+			<a class="portfolio-link" target="_blank" href="https://github.com/MattTaylor96/Invoice_Validation"><div class="portfolio-link-text">View on GitHub</div></a>
+		</div>
+		<div class="secondary-showcase-item showcase-dark">
+			<h3 class="portfolio-title">Portfolio Page</h3>
+			<div class="portfolio-img-container"><img class="portfolio-img" src="img/portfolio.png"></div>
+			<p class="portfolio-desc">This portfolio page is an example of responsive web design, utilising CSS and JavaScript to dynamically alter the content.</p>
+			<a class="portfolio-link" href="#"><div class="portfolio-link-text">View on GitHub</div></a>
+		</div>
+		<div class="secondary-showcase-item showcase-dark">
+			<h3 class="portfolio-title">Coming Soon</h3>
+			<div class="portfolio-img-container"><img class="portfolio-img" src="img/placeholder.png"></div>
+			<p class="portfolio-desc">More projects will be coming soon!</p>
+			<a class="portfolio-link" href="#"><div class="portfolio-link-text">View on GitHub</div></a>
+		</div>
+	</div>
+	
+	<div class="dark-background" id="about">
+	<h3 class="section-title">About Me</h3>
+	<p class="section-content">I am an ambitious, hard-working and reliable individual with a passion for software development, along with an excellent understanding of the demands of a professional working environment. I graduated with a First Class in Computing, wiht a focus on the development of web applications and an understanding of Cyber Security.</p>
+	<div class="about-content">
+		<div class="skills-container" id="skills">
+			<h4 class="sub-title">Skills</h4>
+			<hr>
+			<ul class="skills-list">
+				<li class="skills-list-item">Software</li>
+				<li class="skills-list-item">- Advanced knowlege of JavaScript, HTML5 & CSS3</li>
+				<li class="skills-list-item">- Intermediate knowledge of jQuery & Bootstrap frameworks</li>
+				<li class="skills-list-item">- Novice experience with PHP, Python, VBA & SQL</li>
+				<li class="skills-list-item">- Awareness of React.js & Vue.js frameworks</li>
+				<li class="skills-list-item">- Theoretical understanding of JSON & AJAX</li>
+				<hr>
+				<li class="skills-list-item">Professional</li>
+				<li class="skills-list-item">- Excellent knowledge of Information Security and Cyber Risks</li>
+				<li class="skills-list-item">- Excellent Microsoft Office skills including Word, Excel & PowerPoint</li>
+				<li class="skills-list-item">- Excellent communication skills</li>
+				<li class="skills-list-item">- Excellent organisational skills</li>
+				<li class="skills-list-item">- Able to work independantly or as part of a team</li>
+				<li class="skills-list-item">- Highly motivated</li>
+				<li class="skills-list-item">- Passionate to improve and to learn new skills</li>
+			</ul>
+		</div>
+		<div class="skills-container" id="quals">
+			<h4 class="sub-title">Qualifications</h4>
+			<hr>
+			<ul class="skills-list">
+				<li class="skills-list-item">Academic</li>
+				<li class="skills-list-item">- BSc Hons. in Computing (First Class) - University of Worcester (2017)</li>
+				<li class="skills-list-item">- 4 A-Levels in IT, Maths, Geography & Economics - Windsor High School and Sixth Form (2012 - 2014)</li>
+				<li class="skills-list-item">- 7 GCSE (Including English, Maths & Science) - Windsor High School (2007 - 2012)</li>
+				<hr>
+				<li class="skills-list-item">Self-Taught</li>
+				<li class="skills-list-item">- FreeCodeCamp Certification in Responsive Web Development (08/03/2019)</li>
+				<li class="skills-list-item">- FreeCodeCamp Certification in JavaScript Algorithms and Data Structures (22/03/2019)</li>
+			</ul>
+			<div class="cv">
+				<p class="cv-tagline">After more information? Download my CV below...</p>
+				<a class="cv-download" href="#"><i class="fas fa-file-download fa-7x"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+	<h3 class="section-title" id="contact">Contact Me</h3>
+	<p class="tagline">Did I miss something? Please get in touch if you want to know more...</p>
+		<form class="contact-form">
+			<p class="field-label">First Name:</p>
+			<input class="input-field" type="text" placeholder="Please Enter Your First Name..." required>
+			<p class="field-label">Last Name:</p>
+			<input class="input-field" type="text" placeholder="Please Enter Your Last Name..." required>
+			<p class="field-label">Phone Number (Optional):</p>
+			<input class="input-field" type="text" placeholder="Please Enter Your Phone Number...">
+			<p class="field-label">Email Address:</p>
+			<input class="input-field" type="text" placeholder="Please Enter Your Email Address..." required>
+			<p class="field-label">Message Subject:</p>
+			<input class="input-field" type="text" placeholder="Message Subject" required>
+			<p class="field-label">Your Message:</p>
+			<textarea class="input-field" id="text-area" placeholder="Start typing your message here..." required></textarea>
+			<button id="submit-form" type="submit">Send Message</button>
+		</form>
+	
+	<footer>
+		Created by Matt Taylor - Updated June 2019
+		<div id="social-media">
+		<ul class="media-list">
+			<li class="media-list-item"><a class="media-link" target="_blank" href="https://www.linkedin.com/in/matt-taylor-b4142410b/"><i class="fab fa-linkedin fa-2x"></i></a></li>
+			<li class="media-list-item"><a class="media-link" target="_blank" href="https://www.freecodecamp.org/tattheflame"><i class="fab fa-free-code-camp fa-2x"></i></a></li>
+			<li class="media-list-item"><a class="media-link" target="_blank" href="https://github.com/MattTaylor96"><i class="fab fa-github-square fa-2x"></i></a></li>
+			<li class="media-list-item"><a class="media-link" target="_blank" href="https://codepen.io/TayM1/"><i class="fab fa-codepen fa-2x"></i></a></li>
+		</ul>
+		</div>
+	</footer>
+
+
+<script src="js/main.js"></script>
+
+</script>
+	
+</body>
