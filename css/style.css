@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Roboto|Raleway');
+
+body{
+	background-color: #dcdde1;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+/* -------------------- Nav -------------------- */
+
+.navbar{
+	background-color: #273c75;
+	font-family: Roboto;
+	padding: 5px 50px 0px 15px;
+	position: fixed;
+	max-width: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	z-index: 3;
+	transition: 0.5s;
+	font-size: 26px;
+}
+	.nav-scroll{
+		background-color: #2f3640;
+		font-size: 22px;
+		opacity: 0.9;
+		transition: 0.5s;
+	}
+	.nav-scroll:hover{
+		opacity: 1;
+	}
+	.nav-brand{
+		color: #273c75;
+		font-family: Cabin;
+		font-size: 32px;
+		padding: 10px;
+		text-decoration: none;	
+		transition: 0.5s;		
+	}
+	.brand-color{
+		color: #fbc531;
+		transition: 0.5s;
+	}
+	.nav-item{
+		align-self: center;
+		color: #dcdde1;
+		text-decoration: none;
+	}
+		.nav-item:hover{
+			color: #fbc531;
+			transition: 0.5s;
+		}
+		.active-link{
+			color: #fbc531;
+		}
+	.nav-toggle{
+		color: #dcdde1;
+		display: none;
+		font-size: 26px;
+		padding-top: 15px;
+		padding-right: 15px;
+		position: fixed;
+		top: 0;
+		right: 0;
+		text-decoration: none;
+	}
+		.nav-toggle:hover{
+			color: #fbc531;
+			transition: 0.5s;
+		}
+	.nav-toggled{
+		padding-bottom: 5px;
+	}
+/* -------------------- Showcase -------------------- */
+
+.showcase-container{
+	background-color: #273c75;
+	font-family: Roboto;
+	height: 80vh;
+	text-align: center;
+	width: 100%;
+}
+	.showcase-title{
+		color: #fbc531;
+		font-size: 52px;
+		margin: 0;
+		padding-top: 30vh;
+	}
+	.showcase-text{
+		color: #dcdde1;
+		font-size: 32px;
+		margin: auto;
+		width: 60%;
+	}
+
+/* -------------------- Primary Items -------------------- */	
+	
+.primary-showcase-item{
+	border: 3px solid #dcdde1;
+	max-width: 300px;
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+}
+
+	.primary-title{
+		background-color: #c23616;
+		color: #dcdde1;
+		font-family: Roboto;
+		height: 40px;
+		margin: 0;
+		padding: 5px;
+		text-align: center;
+	}
+	.primary-icon{
+		padding: 15px 0;
+		text-align: center;
+	}
+		#icon-1{
+			background-color: #273c75;
+			color: #fbc531;
+		}
+		#icon-2{
+			background-color: #fbc531;
+			color: #273c75;
+		}
+		#icon-3{
+			background-color: #273c75;
+			color: #fbc531;
+		}
+	.primary-text{
+		background-color: #dcdde1;
+		color: #273c75;
+		font-family: Raleway;
+		font-size: 20px;
+		padding: 10px;
+		text-align: center;
+		height: 100%;
+	}
+
+/* -------------------- Global -------------------- */
+
+.hidden{
+	display: none;
+}
+
+.container{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.dark-background{
+	background-color: #2f3640;
+	padding: 50px;
+}
+
+.section-title{
+	font-family: Roboto;
+	font-size: 24px;
+	text-align: center;
+	}
+	
+.section-content{
+	color: #dcdde1;
+	font-family: Raleway;
+	font-size: 18px;
+	margin: 0 auto 15px auto;
+	width: 80%;
+}
+
+/* -------------------- Portfolio -------------------- */
+
+.secondary-showcase-item{
+	border: 3px solid #2f3640;
+	margin: 10px 0;
+	max-width: 375px;
+	padding-bottom: 35px;
+	position: relative;
+	width: 30%;
+}
+	.showcase-dark{
+		background-color: #2f3640;
+		color: #dcdde1;
+	}
+	.portfolio-title{
+		background-color: #c23616;
+		border-bottom: 3px solid #2f3640;
+		color: #dcdde1;
+		font-family: Raleway;
+		font-size: 22px;
+		margin: 0;
+		padding: 5px;
+		text-align: center;
+	}
+	.portfolio-img-container{
+		max-height: 375px;
+	}
+		.portfolio-img{
+			max-width: 100%;
+		}
+	.portfolio-desc{
+		font-family: Raleway;
+		font-size: 18px;
+		padding: 0 15px;
+	}
+	.portfolio-link{
+		text-decoration: none;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+	.portfolio-link-text{
+		background-color: #c23616;
+		color: #dcdde1;
+		font-family: Roboto;
+		font-size: 18px;
+		font-weight: 800;
+		height: 15px;
+		padding: 15px;
+		text-align: center;
+	}
+	.portfolio-link-text:hover{
+		background-color: #dcdde1;
+		color: #c23616;
+	}
+
+/* -------------------- About -------------------- */
+	
+#about{
+	color: #dcdde1;
+	padding: 10px;
+}
+	.about-content{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.skills-container{
+		width: 45%;
+	}
+		.sub-title{
+			font-family: Roboto;
+			font-size: 20px;
+			margin: 0;
+		}
+		.skills-list{
+			padding: 0;
+		}
+		.skills-list-item{
+			font-family: Cabin;
+			font-size: 18px;
+			list-style: none;
+		}
+		#skills{
+			color: #00a8ff;
+		}
+		#quals{
+			color: #4cd137;
+		}
+		.cv{
+			border: 3px solid #dcdde1;
+			color: #dcdde1;
+			font-family: Cabin;
+			font-size: 18px;
+			padding: 5px;
+			text-align: center;
+		}
+			.cv-tagline{
+				margin: 5px 0 10px 0;
+				}
+			.cv-download{
+				color: #dcdde1;
+				text-align: center;
+				text-decoration: none;
+			}
+			.cv-download:hover{
+				color: #fbc531;
+			}
+/* -------------------- Contact -------------------- */
+
+.tagline{
+	font-family: Raleway;
+	font-size: 20px;
+	text-align: center;
+}
+
+.contact-form{
+	font-family: Raleway;
+	margin: auto;
+	text-align: center;
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+	.field-label{
+		margin-bottom: 5px;
+		font-size: 20px;
+		text-align: left;
+	}
+	.input-field{
+		background-color: #dcdde1;
+		border: none;
+		border-bottom: 2px solid #c23616;
+		border-left: 2px solid #c23616;
+		font-size: 18px;
+		padding: 5px;
+		width: 100%;
+	}
+	.input-field:focus{
+		border-bottom: 3px solid #4cd137;
+		border-left: 3px solid #4cd137;
+		outline: none;
+		transition: 0.5s;
+	}
+	#text-area{
+		font-size: 16px;
+		max-width: 100%;
+		min-height: 100px;
+	}
+	#submit-form{
+		border: none;
+		background-color: #c23616; 
+		color: #dcdde1;
+		cursor: pointer;
+		font-size: 24px;
+		height: 50px;
+		margin: 10px auto;
+		width: 100%;
+	}
+		#submit-form:hover{
+			background-color: #4cd137; 
+			color: #2f3640;
+			transition: 0.5s;
+		}
+		
+/* -------------------- Footer -------------------- */
+		
+footer{
+	background-color: #2f3640;
+	color: #dcdde1;
+	font-family: Roboto;
+	height: 100px;
+	padding-top: 10px;
+	text-align: center;
+	width: 100%;
+}
+	.media-list{
+		padding: 0;
+	}
+	.media-list-item{
+		display: inline;
+		list-style: none;
+		padding: 0 10px;
+
+	}
+	.media-link{
+		color: #dcdde1;
+	}
+	.media-link:hover{
+		color: #fbc531;
+	}
+	
+/* -------------------- Media Queries -------------------- */
+
+/* -------------------- Smartphones  -------------------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.primary-showcase-item{border: none; border-bottom: 3px solid #dcdde1; margin-bottom: 10px; max-width: none; width: 80%; font-size: 12px;}
+	.secondary-showcase-item{max-width: 375px; width: 100%;}
+	.primary-title{background-color: #2f3640;}
+	.primary-icon{width: 150px; border-radius: 50%; margin: auto;}
+	.showcase-title{padding-top: 20vh;}
+	.skills-container{width: 100%;}	
+	.contact-form{width: 80%;}
+	.primary-text{background-color: #2f3640; color: #dcdde1;}
+	
+	.nav-item{background-color: #273c75; display: none; text-align: center; width: 100%;}
+	.nav-item:hover{background-color: #dcdde1; color: #273c75;}
+	.nav-toggle{display: block;}
+	#navbar{flex-direction: column; padding-left: 0;}
+}
+
+/* -------------------- Smaller than Laptops -------------------- */
+@media only screen and (min-width : 480px) and (max-width : 1200px) {
+	.primary-showcase-item{border: none; border-bottom: 3px solid #dcdde1; margin-bottom: 10px; max-width: none; width: 80%;}
+	.secondary-showcase-item{max-width: 375px; width: 100%;}
+	.primary-title{background-color: #2f3640;}
+	.primary-icon{width: 150px; border-radius: 50%; margin: auto;}
+	.showcase-title{padding-top: 20vh;}
+	.skills-container{width: 100%;}	
+	.contact-form{width: 80%;}
+	.primary-text{background-color: #2f3640; color: #dcdde1;}
+	
+	.nav-item{background-color: #273c75; display: none; text-align: center; width: 100%;}
+	.nav-item:hover{background-color: #dcdde1; color: #273c75;}
+	.nav-toggle{display: block;}
+	#navbar{flex-direction: column; padding-left: 0;}
+}
