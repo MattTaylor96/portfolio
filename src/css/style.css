@@ -18,7 +18,7 @@ body{
 }
 .nav-padding{
 	display: block;
-	height: 120px;
+	height: 100px;
 	transition: 0.5s;
 }
 
@@ -41,7 +41,7 @@ body{
 		background-color: #2f3640;
 		font-size: 22px;
 		opacity: 0.9;
-		transition: 0.5s;
+		transition: 0.25s;
 	}
 	.nav-scroll:hover{
 		opacity: 1;
@@ -85,7 +85,7 @@ body{
 			transition: 0.5s;
 		}
 	.nav-toggled{
-		padding-bottom: 5px;
+		transition: 0.5s;
 	}
 /* -------------------- Showcase -------------------- */
 
@@ -394,9 +394,10 @@ footer{
 	.contact-form{width: 80%;}
 	.primary-text{background-color: #2f3640; color: #dcdde1;}
 	
-	.nav-item{background-color: #273c75; display: none; text-align: center; width: 100%;}
+	.nav-item{background-color: #273c75; display: none; text-align: center; width: 100%; transition: width 0s;}
 	.nav-item:hover{background-color: #dcdde1; color: #273c75;}
 	.nav-toggle{display: block;}
+	.nav-toggled{display: block; padding-bottom: 5px;}
 	#navbar{flex-direction: column; padding-left: 0;}
 }
 
@@ -411,9 +412,10 @@ footer{
 	.contact-form{width: 80%;}
 	.primary-text{background-color: #2f3640; color: #dcdde1;}
 	
-	.nav-item{background-color: #273c75; display: none; text-align: center; width: 100%;}
+	.nav-item{background-color: #273c75; display: none; text-align: center; width: 100%; transition: width 0s;}
 	.nav-item:hover{background-color: #dcdde1; color: #273c75;}
 	.nav-toggle{display: block;}
+	.nav-toggled{display: block; padding-bottom: 5px;}
 	#navbar{flex-direction: column; padding-left: 0;}
 }
 
