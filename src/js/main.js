@@ -27,11 +27,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => { // Select all anch
 /* -------------------- Toggle Nav -------------------- */
 function toggleNav(){
 	let navItems = $(".nav-item"); // Select all nav items
-	navItems.toggle(500); // Toggle display in 0.5s
+	navItems.toggle(500); // Toggle display in 0.5s (Error in desktop view)
 	navItems.toggleClass("nav-toggled"); // Toggle class
 	$(".nav-padding-container").toggleClass("nav-padding"); // Toggle class
 	$("#nav-toggle").toggleClass("active-link");
 }
+
+/* Fix Nav On Resize */
+$(window).resize(function() {
+	if ($(window).width() > 1200) {
+		// If window resized to greater than 1200px
+		$(".nav-item").show(500);
+	}
+});
 
 /* -------------------- Active Links -------------------- */
 $(document).ready(function() {
