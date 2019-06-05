@@ -26,9 +26,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => { // Select all anch
 
 /* -------------------- Toggle Nav -------------------- */
 function toggleNav(){
-	let navItems = $(".nav-item");
-	navItems.toggle(500);
-	navItems.toggleClass("nav-toggled");
+	let navItems = $(".nav-item"); // Select all nav items
+	navItems.toggle(500); // Toggle display in 0.5s
+	navItems.toggleClass("nav-toggled"); // Toggle class
+	$(".nav-padding-container").toggleClass("nav-padding"); // Toggle class
+	$("#nav-toggle").toggleClass("active-link");
 }
 
 /* -------------------- Active Links -------------------- */
