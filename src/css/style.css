@@ -6,6 +6,22 @@ body{
 	margin: 0;
 }
 
+.section-top{
+	transition: 0.5s;
+}
+
+.nav-padding-container{
+	background-color: #273c75;
+	height: 0px;
+	transition: 0.5s;
+	
+}
+.nav-padding{
+	display: block;
+	height: 120px;
+	transition: 0.5s;
+}
+
 /* -------------------- Nav -------------------- */
 
 .navbar{
@@ -52,14 +68,13 @@ body{
 			transition: 0.5s;
 		}
 		.active-link{
-			color: #fbc531;
+			color: #fbc531 !important;
 		}
 	.nav-toggle{
 		color: #dcdde1;
 		display: none;
-		font-size: 26px;
-		padding-top: 15px;
-		padding-right: 15px;
+		font-size: 32px;
+		padding: 15px;
 		position: fixed;
 		top: 0;
 		right: 0;
@@ -195,10 +210,12 @@ body{
 		text-align: center;
 	}
 	.portfolio-img-container{
-		max-height: 375px;
+		height: 250px;
 	}
 		.portfolio-img{
+			height: 100%;
 			max-width: 100%;
+			width: 100%;
 		}
 	.portfolio-desc{
 		font-family: Raleway;
@@ -316,6 +333,7 @@ body{
 		transition: 0.5s;
 	}
 	#text-area{
+		font-family: Raleway;
 		font-size: 16px;
 		max-width: 100%;
 		min-height: 100px;
@@ -397,4 +415,14 @@ footer{
 	.nav-item:hover{background-color: #dcdde1; color: #273c75;}
 	.nav-toggle{display: block;}
 	#navbar{flex-direction: column; padding-left: 0;}
+}
+
+/* -------------------- Desktops and laptops -------------------- */
+@media only screen and (min-width : 1224px) {
+
+}
+
+/* -------------------- Large screens -------------------- */
+@media only screen and (min-width : 1824px) {
+
 }
