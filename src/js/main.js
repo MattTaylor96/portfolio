@@ -38,6 +38,8 @@ $(window).resize(function() {
 	if ($(window).width() > 1200) {
 		// If window resized to greater than 1200px
 		$(".nav-item").show(500);
+	} else{
+		$(".nav-item").hide(500);
 	}
 });
 
