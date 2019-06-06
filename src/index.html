@@ -21,7 +21,7 @@
 	<div class="nav-padding-container"></div>
 	<div class="showcase-container" id="page-top">
 		<h1 class="showcase-title">Matt Taylor</h1>
-		<p class="showcase-text">An aspiring software developer with a focus on web application design, revolving around HTML5, CSS3 and JavaScript.</p>
+		<p class="showcase-text">An aspiring software developer with a focus on web application design using around HTML5, CSS3 and JavaScript.</p>
 	</div>
 	<div class="dark-background">
 	<div class="container">
@@ -42,31 +42,83 @@
 		</div>
 	</div>
 	</div>
+	
+	<!-- Portfolio Section -->
 	<h3 class="section-title" id="portfolio">My Work</h3>
 	<div class="container">
 		<div class="secondary-showcase-item showcase-dark">
 			<h3 class="portfolio-title">Invoice Validation</h3>
-			<div class="portfolio-img-container"><img class="portfolio-img" src="img/invoice_val.png"></div>
+			<div class="portfolio-icon-container trigger" data-portfolio-item="1"><i class="fas fa-plus"></i><p class="portfolio-icon-tagline">Click for More Information</p></div>
 			<p class="portfolio-desc">An application built using native JavaScript in addition to the PapaParse plugin (for converting csv files to JSON). The applicaiton takes an input file and validates it against pre-set conditions. Any errors will be listed and available for export to a txt file.</p>
-			<a class="portfolio-link" target="_blank" href="https://github.com/MattTaylor96/Invoice_Validation"><div class="portfolio-link-text">View on GitHub</div></a>
-		</div>
-		<div class="secondary-showcase-item showcase-dark">
-			<h3 class="portfolio-title">Portfolio Page</h3>
-			<div class="portfolio-img-container"><img class="portfolio-img" src="img/portfolio.png"></div>
-			<p class="portfolio-desc">This portfolio page is an example of responsive web design, utilising CSS media queries and JavaScript to dynamically alter the content.</p>
-			<a class="portfolio-link" target="_blank" href="https://github.com/MattTaylor96/portfolio"><div class="portfolio-link-text">View on GitHub</div></a>
+			<a class="portfolio-link" target="_blank" href="https://github.com/MattTaylor96/Invoice_Validation"><div class="portfolio-link-text">View Source on GitHub</div></a>
 		</div>
 		<div class="secondary-showcase-item showcase-dark">
 			<h3 class="portfolio-title">Contact List</h3>
-			<div class="portfolio-img-container"><img class="portfolio-img" src="img/placeholder.png"></div>
+			<div class="portfolio-icon-container trigger" data-portfolio-item="2"><i class="fas fa-expand"></i><p class="portfolio-icon-tagline">Click for More Information</p></div>
 			<p class="portfolio-desc">An address book built using vanilla JavaScript, along with styling from Bootstrap. This utilises local storage to maintain contacts between </p>
-			<a class="portfolio-link" target="_blank" href="https://github.com/MattTaylor96/Address_Book"><div class="portfolio-link-text">View on GitHub</div></a>
+			<a class="portfolio-link" target="_blank" href="https://github.com/MattTaylor96/Address_Book"><div class="portfolio-link-text">View Source on GitHub</div></a>
+		</div>
+		<div class="secondary-showcase-item showcase-dark">
+			<h3 class="portfolio-title">Portfolio Page</h3>
+			<div class="portfolio-icon-container trigger" data-portfolio-item="3"><i class="fas fa-expand-arrows-alt"></i><p class="portfolio-icon-tagline">Click for More Information</p></div>
+			<p class="portfolio-desc">This portfolio page is an example of responsive web design, utilising CSS media queries and JavaScript to dynamically alter the content.</p>
+			<a class="portfolio-link" target="_blank" href="https://github.com/MattTaylor96/portfolio"><div class="portfolio-link-text">View Source on GitHub</div></a>
+		</div>
+		
+	</div>
+	
+	<!-- Modal Content -->
+	<!-- Modal 1 -->
+	<div class="modal" data-modal-val="1">
+		<div class="modal-content">
+			<span class="close-button" data-portfolio-item="1"><i class="fas fa-times"></i></span>
+			<h4 class="modal-title">Invoice Validation</h4>
+			<div class="modal-img-container">
+				<img class="modal-img" src="img/invoice_val.png">
+			</div>
+			<p class="modal-desc">This application uses local sorage to save inputted Client details, then validates a number of invoice files against these details. The application uses the PapaParse plugin to convert csv files to JSON, then validates the lines within the files against a set number of conditions. The user can then export any records that did not meet the conditions to a txt file as an error log. This was built to replace a time-consuming task of manually checking invoice lines, and is still being used today.</p>
+			<div class="modal-img-container-lower">
+				<img class="modal-img-med" src="img/invoice_mobile_1.png">
+				<img class="modal-img-med" src="img/invoice_mobile_2.png">
+			</div>
+		</div>
+	</div>
+	<!-- Modal 2 -->
+	<div class="modal" data-modal-val="2">
+		<div class="modal-content">
+			<span class="close-button" data-portfolio-item="2"><i class="fas fa-times"></i></span>
+			<h4 class="modal-title">Address Book</h4>
+			<div class="modal-img-container">
+				<img class="modal-img" src="img/address_book.png">
+			</div>
+			<p class="modal-desc">This address book uses local storage and JavaScript to save, edit and delete records relating to contacts. This is currently under construction, and will include additional modals for each record with more detailed information. This was built purely for academic purposes, as a learning tool to help with the basics of JavaScript.</p>
+			<div class="modal-img-container-lower">
+				<img class="modal-img-med" src="img/address_mobile.png">
+				
+			</div>
+		</div>
+	</div>
+	<!-- Modal 3 -->
+	<div class="modal" data-modal-val="3">
+		<div class="modal-content">
+			<span class="close-button" data-portfolio-item="3"><i class="fas fa-times"></i></span>
+			<h4 class="modal-title">Portoflio Page</h4>
+			<div class="modal-img-container">
+				<img class="modal-img" src="img/portfolio.png">
+			</div>
+			<p class="modal-desc">This portfolio page was designed to showcase a variety of compelted projects by myself. The site utilises a mixture of CSS Media Queries and JavaScript (including jQuery) to provide a dynamic and responsive experience for visitors. This site was initially developed in June 2019, and has been subject to regular updates since.</p>
+			<div class="modal-img-container-lower">
+				<img class="modal-img-sm" src="img/portfolio_mobile_1.png">
+				<img class="modal-img-sm" src="img/portfolio_mobile_2.png">
+				<img class="modal-img-sm" src="img/portfolio_mobile_3.png">
+			</div>
 		</div>
 	</div>
 	
+	<!-- About Section -->
 	<div class="dark-background" id="about">
 	<h3 class="section-title">About Me</h3>
-	<p class="section-content">I am an ambitious, hard-working and reliable individual with a passion for software development, along with an excellent understanding of the demands of a professional working environment. I graduated with a First Class in Computing, wiht a focus on the development of web applications and an understanding of Cyber Security.</p>
+	<p class="section-content">I am an ambitious, hard-working and reliable individual with a passion for software development, along with an excellent understanding of the demands of a professional working environment. Now living in Droitwich, I graduated with a First Class in Computing from the University of Worcester, with a focus on the development of web applications and a strong understanding of Cyber Security.</p>
 	<div class="about-content">
 		<div class="skills-container" id="skills">
 			<h4 class="sub-title">Skills</h4>
@@ -129,7 +181,7 @@
 		</form>
 	
 	<footer>
-		Created by Matt Taylor - Updated June 2019
+		Created by Matt Taylor
 		<div id="social-media">
 		<ul class="media-list">
 			<li class="media-list-item"><a class="media-link" target="_blank" href="https://www.linkedin.com/in/matt-taylor-b4142410b/"><i class="fab fa-linkedin fa-2x"></i></a></li>
