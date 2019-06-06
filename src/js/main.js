@@ -1,5 +1,4 @@
 /* -------------------- Navbar Colour Class -------------------- */
-
 // On scroll display the navbar correctly
 $(function() {
    $(window).scroll(function () {
@@ -37,9 +36,9 @@ function toggleNav(){
 $(window).resize(function() {
 	if ($(window).width() > 1200) {
 		// If window resized to greater than 1200px
-		$(".nav-item").show(500);
+		$(".nav-item").show(0);
 	} else{
-		$(".nav-item").hide(500);
+		$(".nav-item").hide(0);
 	}
 });
 
@@ -78,3 +77,40 @@ $(document).ready(function() {
 		});
 });
 
+/* -------------------- Toggle Modal -------------------- */
+var modal = document.querySelectorAll(".modal"); // Define modals
+var trigger = document.querySelectorAll(".trigger"); // Define modal triggers
+var closeButton = document.querySelectorAll(".close-button"); // Define close buttons
+
+function toggleModal() {
+	// Store data value of trigger
+	let dataValue = this.dataset.portfolioItem;
+	// Find modal with matching val and show
+	for(let i = 0; i < modal.length; i++){
+		if(modal[i].dataset.modalVal == dataValue){
+			modal[i].classList.toggle("show-modal");
+		}
+	}   
+}
+
+function windowOnClick(event) {
+	// Store data value of modal
+	let dataValue = event.target.dataset.modalVal;
+    if (dataValue > 0) {
+		// Hide all modals
+        for(let i = 0; i < modal.length; i++){
+			modal[i].classList.remove("show-modal");
+		}
+    }
+}
+
+// Add click listener to each trigger
+trigger.forEach(function(x){
+	x.addEventListener("click", toggleModal);
+});
+// Add listener to each close button
+closeButton.forEach(function(y){
+	y.addEventListener("click", toggleModal);
+});
+// Close modal on background click
+window.addEventListener("click", windowOnClick); 
