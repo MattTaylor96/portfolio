@@ -112,5 +112,13 @@ trigger.forEach(function(x){
 closeButton.forEach(function(y){
 	y.addEventListener("click", toggleModal);
 });
-// Close modal on background click
-window.addEventListener("click", windowOnClick); 
+// Close modals on background click
+$(window).click(windowOnClick); 
+// Close modals on escape key up
+$(document).keyup(function(e) {
+     if (e.key === "Escape") {
+        for(let i = 0; i < modal.length; i++){
+			modal[i].classList.remove("show-modal");
+		}
+    }
+});
