@@ -22,6 +22,7 @@
 	<div class="showcase-container" id="page-top">
 		<h1 class="showcase-title">Matt Taylor</h1>
 		<p class="showcase-text">An aspiring software developer with a focus on web application design using around HTML5, CSS3 and JavaScript.</p>
+		<a class="showcase-btn-link" href="#portfolio"><button class="showcase-btn">View My Work</button></a>
 	</div>
 	<div class="dark-background">
 	<div class="container">
@@ -48,7 +49,7 @@
 	<div class="container">
 		<div class="secondary-showcase-item showcase-dark">
 			<h3 class="portfolio-title">Invoice Validation</h3>
-			<div class="portfolio-icon-container trigger" data-portfolio-item="1"><i class="fas fa-plus"></i><p class="portfolio-icon-tagline">Click for More Information</p></div>
+			<div class="portfolio-icon-container trigger" data-portfolio-item="1"><i class="fas fa-expand"></i><p class="portfolio-icon-tagline">Click for More Information</p></div>
 			<p class="portfolio-desc">An application built using native JavaScript in addition to the PapaParse plugin (for converting csv files to JSON). The applicaiton takes an input file and validates it against pre-set conditions. Any errors will be listed and available for export to a txt file.</p>
 			<a class="portfolio-link" target="_blank" href="https://github.com/MattTaylor96/Invoice_Validation"><div class="portfolio-link-text">View Source on GitHub</div></a>
 		</div>
@@ -60,11 +61,16 @@
 		</div>
 		<div class="secondary-showcase-item showcase-dark">
 			<h3 class="portfolio-title">Portfolio Page</h3>
-			<div class="portfolio-icon-container trigger" data-portfolio-item="3"><i class="fas fa-expand-arrows-alt"></i><p class="portfolio-icon-tagline">Click for More Information</p></div>
+			<div class="portfolio-icon-container trigger" data-portfolio-item="3"><i class="fas fa-expand"></i><p class="portfolio-icon-tagline">Click for More Information</p></div>
 			<p class="portfolio-desc">This portfolio page is an example of responsive web design, utilising CSS media queries and JavaScript to dynamically alter the content.</p>
-			<a class="portfolio-link" target="_blank" href="https://github.com/MattTaylor96/portfolio"><div class="portfolio-link-text">View Source on GitHub</div></a>
+			<a class="portfolio-link" target="_blank" href="https://github.com/MattTaylor96/portfolio"><div class="portfolio-link-text">View Source on GitHub</div></a>	
 		</div>
-		
+		<div class="secondary-showcase-item showcase-dark">
+			<h3 class="portfolio-title">Bug Tracker</h3>
+			<div class="portfolio-icon-container trigger" data-portfolio-item="4"><i class="fas fa-expand"></i><p class="portfolio-icon-tagline">Click for More Information</p></div>
+			<p class="portfolio-desc">Currently in development, this application allows users to store, edit and delete bugs, and allows administrators to mark bugs as complete.</p>
+			<a class="portfolio-link" target="_blank" href="#"><div class="portfolio-link-text">View Source on GitHub</div></a>	
+		</div>
 	</div>
 	
 	<!-- Modal Content -->
@@ -155,8 +161,8 @@
 				<li class="skills-list-item">- FreeCodeCamp Certification in JavaScript Algorithms and Data Structures (22/03/2019)</li>
 			</ul>
 			<div class="cv">
-				<p class="cv-tagline">After more information? Download my CV below...</p>
-				<a class="cv-download" href="#"><i class="fas fa-file-download fa-7x"></i></a>
+				<p class="cv-tagline">After more information? View my CV by clicking below...</p>
+				<a class="cv-download" href="https://drive.google.com/file/d/1ancjbWMJd7dt2B6TUcQ-Ebpv00d7tQ4r/view?usp=sharing" target="_blank"><i class="fas fa-file-download fa-7x"></i></a>
 			</div>
 		</div>
 	</div>
@@ -164,7 +170,7 @@
 	
 	<h3 class="section-title" id="contact">Contact Me</h3>
 	<p class="tagline">Did I miss something? Please get in touch if you want to know more...</p>
-		<form class="contact-form">
+		<form class="contact-form" action="submit_form.php">
 			<p class="field-label">First Name:</p>
 			<input class="input-field" type="text" placeholder="Please Enter Your First Name..." required>
 			<p class="field-label">Last Name:</p>
