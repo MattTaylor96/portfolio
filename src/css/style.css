@@ -555,13 +555,14 @@ footer{
 }
 
 /* -------------------- Smaller than Laptops -------------------- */
-@media only screen and (min-width : 480px) and (max-width : 1200px) {
+@media only screen and (max-width : 1200px) {
 	.primary-showcase-item{border: none; border-bottom: 3px solid #dcdde1; margin-bottom: 10px; max-width: none; width: 80%;}
 	.secondary-showcase-item{max-width: 375px; width: 100%;}
 	.primary-title{background-color: #2f3640; color: #fbc531;}
 	.primary-icon{width: 150px; border-radius: 50%; margin: auto;}
 	#icon-1, #icon-2, #icon-3{background-color: #dcdde1; color: #2f3640;}
 	.showcase-title{padding-top: 20vh;}
+    .showcase-container{height: 100%; padding-bottom: 10px;}
 	.skills-container{width: 100%;}	
 	.contact-form{width: 80%;}
 	.primary-text{background-color: #2f3640; color: #dcdde1;}
