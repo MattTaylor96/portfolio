@@ -485,6 +485,16 @@ body{
 			color: #2f3640;
 			transition: 0.5s;
 		}
+
+    .email-success{
+        background-color: #4cd137;
+        color: #2f3640;
+    }
+
+    .email-failure{
+        background-color: #c23616; 
+		color: #dcdde1;
+    }
 		
 /* -------------------- Footer -------------------- */
 		
